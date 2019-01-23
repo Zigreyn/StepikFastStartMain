@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:baselineAlignBottom="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_add_a_photo_black_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEmailLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/email"
+        app:layout_constraintEnd_toEndOf="@+id/tvPasswordLabel"
+        app:layout_constraintStart_toEndOf="@+id/ivPhoto"
+        app:layout_constraintTop_toTopOf="@+id/ivPhoto" />
+
+    <TextView
+        android:id="@+id/tvPasswordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/password"
+        app:layout_constraintStart_toEndOf="@+id/ivPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmailLabel" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvEmailLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvEmailLabel" />
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvPasswordLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvPasswordLabel" />
+
+
+</android.support.constraint.ConstraintLayout>
